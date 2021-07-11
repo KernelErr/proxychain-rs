@@ -1,0 +1,27 @@
+[package]
+name = "proxychain"
+version = "0.0.0"
+edition = "2018"
+authors = ["LI Rui <lr_cn@outlook.com>"]
+readme = "README.md"
+description = """
+Proxychain is a command-line tool for converting proxy protocols and creating proxy chain.
+"""
+repository = "https://github.com/KernelErr/proxychain-rs"
+keywords = ["proxy", "socks", "http"]
+categories = ["network-programming"]
+license = "Apache-2.0"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.3"
+mio = {version = "0.7", features = ["net", "os-poll"]}
+log = "0.4"
+pretty_env_logger = "0.3"
+url = "2.2.2"
+slab = "0.4.3"
+bytes = "1"
+trust-dns-resolver = "0.20.3"
+fnv = "1.0.7"
